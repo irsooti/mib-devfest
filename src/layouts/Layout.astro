@@ -5,11 +5,28 @@ import Linkedin from "../components/shared/linkedin.svg";
 import X from "../components/shared/x.svg";
 import Instagram from "../components/shared/instagram.svg";
 import Logo from "../components/shared/gdg-pescara.png";
-import { Image } from "astro:assets";
+import { Toolbar } from "../components/navbar/Toolbar";
+import Navbar from "../components/navbar/Navbar.astro";
+import Image from "astro/components/Image.astro";
+import type { KnownLocales } from "../i18n";
+import { useTranslations } from "../i18n/utils";
+import { getRelativeLocaleUrl } from "astro:i18n";
+
+interface Props {
+  lang: string;
+}
+
+const scheduleUrl = getRelativeLocaleUrl(Astro.props.lang, "/schedule");
+const speakersUrl = getRelativeLocaleUrl(Astro.props.lang, "/speakers");
+const gamificationUrl = getRelativeLocaleUrl(Astro.props.lang, "/gamification");
+const cocUrl = getRelativeLocaleUrl(Astro.props.lang, "/coc");
+const venueUrl = getRelativeLocaleUrl(Astro.props.lang, "/venue");
+
+const t = useTranslations(Astro.props.lang as KnownLocales);
 ---
 
 <!doctype html>
-<html lang="en" class="bg-gray-100">
+<html lang={Astro.props.lang} class="bg-gray-100">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -47,8 +64,8 @@ import { Image } from "astro:assets";
     <link href="./" rel="stylesheet" />
   </head>
   <body class="font-long">
-    <nav class="px-5 pt-5 text-right">
-      <button class="btn btn-ghost btn-circle btn-sm top-5">MIB</button>
+    <nav class="px-3 pt-3 text-right">
+      <Navbar lang={Astro.props.lang as KnownLocales} />
     </nav>
     <slot />
     <div class="bg-primary py-8 md:py-20 2xl:py-32">
@@ -56,7 +73,7 @@ import { Image } from "astro:assets";
         class="footer container px-5 m-auto sm:footer-horizontal text-primary-content py-8 md:py-20 2xl:py-32"
       >
         <nav>
-          <h3 class="footer-title">About</h3>
+          <h3 class="footer-title">{t("footer.about")}</h3>
           <a
             class="link link-hover"
             target="_blank"
@@ -70,7 +87,7 @@ import { Image } from "astro:assets";
           >
         </nav>
         <nav>
-          <h3 class="footer-title">Past editions</h3>
+          <h3 class="footer-title">{t("footer.pastEditions")}</h3>
           <a
             class="link link-hover"
             target="_blank"
@@ -96,12 +113,16 @@ import { Image } from "astro:assets";
           >
         </nav>
         <nav>
-          <h3 class="footer-title">Event resources</h3>
-          <a class="link link-hover" href="/schedule">Schedule</a>
-          <a class="link link-hover" href="/speakers">Speakers</a>
-          <a class="link link-hover" href="/speakers">Gamification</a>
-          <a class="link link-hover" href="/coc">Code of Conduct</a>
-          <a class="link link-hover" href="/venue">Venue</a>
+          <h3 class="footer-title">{t("footer.resources")}</h3>
+          <a class="link link-hover" href={scheduleUrl}>{t("schedule.title")}</a
+          >
+          <a class="link link-hover" href={speakersUrl}>{t("speakers.title")}</a
+          >
+          <a class="link link-hover" href={gamificationUrl}
+            >{t("gamification.title")}</a
+          >
+          <a class="link link-hover" href={cocUrl}>{t("coc.title")}</a>
+          <a class="link link-hover" href={venueUrl}>{t("venue.title")}</a>
         </nav>
       </footer>
 
@@ -109,7 +130,7 @@ import { Image } from "astro:assets";
         class="footer container m-auto text-base-content border-base-300 border-t px-5 py-4"
       >
         <aside class="grid-flow-col items-center">
-          <img src={Logo.src} width="200" height="49" alt="GDG" />
+          <Image src={Logo} width="200" height="49" alt="GDG" />
         </aside>
         <nav class="md:place-self-center md:justify-self-end">
           <div class="grid grid-flow-col gap-4">

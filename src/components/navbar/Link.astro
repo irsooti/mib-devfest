@@ -1,0 +1,26 @@
+---
+interface Props {
+  exact?: boolean;
+  href: string;
+}
+
+const { pathname } = Astro.url;
+const { props } = Astro;
+---
+
+<a
+  href={props.href}
+  class:list={[
+    !props.exact
+      ? ""
+      : pathname.startsWith(props.href)
+        ? "font-black"
+        : "font-light",
+    pathname === props.href ? "font-black" : "font-light",
+    "hover:underline",
+    "font-display",
+  ]}
+  aria-current={pathname === props.href ? "page" : "false"}
+>
+  <slot />
+</a>
