@@ -1,22 +1,146 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
-</html>
+---
+import "../styles/global.css";
+import Facebook from "../components/shared/facebook.svg";
+import Linkedin from "../components/shared/linkedin.svg";
+import X from "../components/shared/x.svg";
+import Instagram from "../components/shared/instagram.svg";
+import Logo from "../components/shared/gdg-pescara.png";
+import { Image } from "astro:assets";
+---
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
+<!doctype html>
+<html lang="en" class="bg-gray-100">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <meta charset="utf-8" /><meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    /><title>Devfest Pescara 2025</title><meta
+      name="description"
+      content="Join us in Pescara, IT for our conference. Featuring distinguished speakers, workshops, and lots of fun in between. See you there!"
+    /><meta name="og:title" content="Devfest Pescara 2024" /><meta
+      name="og:description"
+      content="Join us in Pescara, IT for our conference. Featuring distinguished speakers, workshops, and lots of fun in between. See you there!"
+    /><meta
+      name="image"
+      property="og:image"
+      content="https://devfest.gdgpescara.it/images/og.jpg"
+    /><meta name="og:url" content="https://devfest.gdgpescara.it" /><meta
+      name="og:type"
+      content="website"
+    /><meta name="twitter:card" content="summary_large_image" /><meta
+      name="twitter:site"
+      content="@gdgpescara"
+    /><meta name="twitter:creator" content="@gdgpescara" /><meta
+      name="twitter:image"
+      content="https://devfest.gdgpescara.it/images/og.jpg"
+    /><meta name="author" content="GDG Pescara" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./" rel="stylesheet" />
+  </head>
+  <body class="font-long">
+    <nav class="px-5 pt-5 text-right">
+      <button class="btn btn-ghost btn-circle btn-sm top-5">MIB</button>
+    </nav>
+    <slot />
+    <div class="bg-primary py-8 md:py-20 2xl:py-32">
+      <footer
+        class="footer container px-5 m-auto sm:footer-horizontal text-primary-content py-8 md:py-20 2xl:py-32"
+      >
+        <nav>
+          <h3 class="footer-title">About</h3>
+          <a
+            class="link link-hover"
+            target="_blank"
+            rel="noreferrer"
+            href="https://gdg.community.dev/gdg-pescara/">GDG Pescara</a
+          >
+          <a
+            class="link link-hover"
+            href="https://developers.google.com/community/gdg"
+            >Google Developer Groups</a
+          >
+        </nav>
+        <nav>
+          <h3 class="footer-title">Past editions</h3>
+          <a
+            class="link link-hover"
+            target="_blank"
+            rel="noreferrer"
+            href="https://devfest2024.gdgpescara.it/">Devfest Pescara 2024</a
+          >
+          <a
+            class="link link-hover"
+            target="_blank"
+            rel="noreferrer"
+            href="https://devfest2023.gdgpescara.it/">Devfest Pescara 2023</a
+          >
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://devfest2022.gdgpescara.it/">Devfest Pescara 2022</a
+          >
+          <a
+            target="_blank"
+            rel="noreferrer"
+            class="link link-hover"
+            href="https://devfest19.gdgpescara.it/">Devfest Pescara 2019</a
+          >
+        </nav>
+        <nav>
+          <h3 class="footer-title">Event resources</h3>
+          <a class="link link-hover" href="/schedule">Schedule</a>
+          <a class="link link-hover" href="/speakers">Speakers</a>
+          <a class="link link-hover" href="/speakers">Gamification</a>
+          <a class="link link-hover" href="/coc">Code of Conduct</a>
+          <a class="link link-hover" href="/venue">Venue</a>
+        </nav>
+      </footer>
+
+      <footer
+        class="footer container m-auto text-base-content border-base-300 border-t px-5 py-4"
+      >
+        <aside class="grid-flow-col items-center">
+          <img src={Logo.src} width="200" height="49" alt="GDG" />
+        </aside>
+        <nav class="md:place-self-center md:justify-self-end">
+          <div class="grid grid-flow-col gap-4">
+            <a
+              rel="noreferrer"
+              target="_blank"
+              class="focus-visible:ring-8 text-primary-content focus:ring-opacity-50 hover:border-accent ring-accent hover:text-accent block border-2 border-primary-content p-4 rounded-full"
+              href="https://www.instagram.com/gdgpescara"><Instagram /></a
+            >
+            <a
+              rel="noreferrer"
+              target="_blank"
+              class="focus-visible:ring-8 text-primary-content focus:ring-opacity-50 hover:border-accent ring-accent hover:text-accent block border-2 border-primary-content p-4 rounded-full"
+              href="https://www.linkedin.com/company/gdg-pescara"
+              ><Linkedin /></a
+            >
+            <a
+              rel="noreferrer"
+              target="_blank"
+              class="focus-visible:ring-8 text-primary-content focus:ring-opacity-50 hover:border-accent ring-accent hover:text-accent block border-2 border-primary-content p-4 rounded-full"
+              href="https://x.com/gdgpescara"><X /></a
+            >
+            <a
+              rel="noreferrer"
+              target="_blank"
+              class="focus-visible:ring-8 text-primary-content focus:ring-opacity-50 hover:border-accent ring-accent hover:text-accent block border-2 border-primary-content p-4 rounded-full"
+              href="https://www.facebook.com/gdgpescara/"><Facebook /></a
+            >
+          </div>
+        </nav>
+      </footer>
+    </div>
+  </body>
+</html>
