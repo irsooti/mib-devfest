@@ -64,6 +64,11 @@ const t = useTranslations(Astro.props.lang as KnownLocales);
     <link href="./" rel="stylesheet" />
   </head>
   <body class="font-long">
+    <a
+      class="sr-only sr-only-focusable top-0 left-0 focus:not-sr-only focus:absolute z-50 focus:bg-primary focus:px-5 focus:py-5 focus: text-primary-content"
+      href="#main-content"
+      tabindex="0">{t('skipToMainContent')}</a
+    >
     <nav class="px-3 pt-3 text-right">
       <Navbar lang={Astro.props.lang as KnownLocales} />
     </nav>

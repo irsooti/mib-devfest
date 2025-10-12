@@ -1,0 +1,13 @@
+---
+import Header from "../components/shared/Header.astro";
+import Layout from "./Layout.astro";
+---
+
+<Layout lang={Astro.currentLocale || "en"}>
+  <Header />
+  <main class="container m-auto py-32">
+    <div class="prose prose-xl px-5">
+      <slot />
+    </div>
+  </main>
+</Layout>

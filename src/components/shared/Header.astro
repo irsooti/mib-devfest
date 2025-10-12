@@ -1,0 +1,21 @@
+---
+import { useTranslations, type KnownLocales } from "../../i18n";
+
+const t = useTranslations(Astro.currentLocale as KnownLocales);
+---
+
+<header class="px-5 pb-5 container m-auto">
+  <h1
+    class="font-display text-3xl font-black uppercase sm:text-4xl md:text-6xl"
+  >
+    Devfest <span class="text-accent">Pescara</span>
+  </h1>
+  <p class="font-display text-xl md:text-4xl">{t("header.when")}</p>
+
+  <a
+    id="main-content"
+    href="#"
+    class="btn btn-primary btn-md lg:btn-lg xl:btn-xl mt-5"
+    >{t("header.reserve")}</a
+  >
+</header>

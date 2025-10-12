@@ -6,6 +6,7 @@ import Aurum from "../components/landing/aurum.png";
 import { getRelativeLocaleUrl } from "astro:i18n";
 import { Image } from "astro:assets";
 import { numbers } from "../components/landing/numbers";
+import Header from "../components/shared/Header.astro";
 
 // Urls
 const scheduleUrl = getRelativeLocaleUrl("en", "schedule");
@@ -13,100 +14,87 @@ const scheduleUrl = getRelativeLocaleUrl("en", "schedule");
 
 <Layout lang="en">
   <div>
-    <div>
-      <header class="px-5 pb-5 container m-auto">
-        <h1
-          class="font-display text-3xl font-black uppercase sm:text-4xl md:text-6xl"
-        >
-          Devfest <span class="text-accent">Pescara</span>
-        </h1>
-        <p class="font-display text-xl md:text-4xl">November 8,9 and 10</p>
-
-        <a href="#" class="btn btn-primary btn-md lg:btn-lg xl:btn-xl mt-5"
-          >RESERVE A SPOT</a
-        >
-      </header>
-      <div class="relative mt-10 -z-10 @container m-auto">
-        <Background class="relative top-2 w-full opacity-60" />
-        <Mib class="absolute left-1/2 -translate-x-1/2 -bottom-1 w-[30cqw]" />
-      </div>
+    <Header />
+    <div class="relative mt-10 -z-10 @container m-auto">
+      <Background class="relative top-2 w-full opacity-60" />
+      <Mib class="absolute left-1/2 -translate-x-1/2 -bottom-1 w-[30cqw]" />
     </div>
-    <section class="bg-primary">
-      <div class="px-5 py-8 md:py-20 2xl:py-32 container m-auto">
-        <h2 class="text-xl md:text-6xl font-display text-accent font-black">
-          Hey, what is it?
-        </h2>
-        <p
-          class="text-accent-content/85 font-long text-xs md:text-2xl mt-5 prose max-w-prose"
-        >
-          The Devfest (i.e Developers Festival), is a technical conference
-          destined to developers. It's meant for students, professionals, or any
-          curious techie This year step into Men in Black!
-        </p>
+  </div>
+  <section class="bg-primary">
+    <div class="px-5 py-8 md:py-20 2xl:py-32 container m-auto">
+      <h2 class="text-xl md:text-6xl font-display text-accent font-black">
+        Hey, what is it?
+      </h2>
+      <p
+        class="text-accent-content/85 font-long text-xs md:text-2xl mt-5 prose max-w-prose"
+      >
+        The Devfest (i.e Developers Festival), is a technical conference
+        destined to developers. It's meant for students, professionals, or any
+        curious techie This year step into Men in Black!
+      </p>
 
-        <p class="text-accent-content/85 font-long text-xs mt-5 md:text-2xl">
-          Interested?
-        </p>
-        <a
-          href={scheduleUrl}
-          class="btn btn-sm lg:btn-lg xl:btn-xl btn-secondary mt-3 uppercase"
-          >See the schedule!</a
-        >
-      </div>
-    </section>
+      <p class="text-accent-content/85 font-long text-xs mt-5 md:text-2xl">
+        Interested?
+      </p>
+      <a
+        href={scheduleUrl}
+        class="btn btn-sm lg:btn-lg xl:btn-xl btn-secondary mt-3 uppercase"
+        >See the schedule!</a
+      >
+    </div>
+  </section>
 
-    <section>
-      <div class="py-8 md:py-20 2xl:py-32">
-        <h2
-          class="text-xl font-display font-black md:text-6xl px-5 md:pb-5 container m-auto"
-        >
-          Reach us at <span class="text-accent">Aurum.</span>
-        </h2>
-        <div
-          class="flex flex-col gap-5 md:flex-row-reverse justify-end md:bg-white"
-        >
-          <div class="px-5 container m-auto">
-            <p class="font-long text-xs mt-5 md:text-2xl prose max-w-prose">
-              We are located in front of the Pineta D'Annunziana, a 5-minute
-              walk from the waterfront
-            </p>
-            <div>
-              <button class="btn btn-primary btn-md lg:btn-lg xl:btn-xl mt-5"
-                >FOLLOW THE DIRECTIONS</button
-              >
-            </div>
-          </div>
-          <div class="opacity-90">
-            <Image src={Aurum} priority alt="Aurum" class="w-full h-auto" />
+  <section>
+    <div class="py-8 md:py-20 2xl:py-32">
+      <h2
+        class="text-xl font-display font-black md:text-6xl px-5 md:pb-5 container m-auto"
+      >
+        Reach us at <span class="text-accent">Aurum.</span>
+      </h2>
+      <div
+        class="flex flex-col gap-5 md:flex-row-reverse justify-end md:bg-white"
+      >
+        <div class="px-5 container m-auto">
+          <p class="font-long text-xs mt-5 md:text-2xl prose max-w-prose">
+            We are located in front of the Pineta D'Annunziana, a 5-minute walk
+            from the waterfront
+          </p>
+          <div>
+            <button class="btn btn-primary btn-md lg:btn-lg xl:btn-xl mt-5"
+              >FOLLOW THE DIRECTIONS</button
+            >
           </div>
         </div>
+        <div class="opacity-90">
+          <Image src={Aurum} alt="Aurum" class="w-full h-auto" />
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section>
-      <div class="px-5 py-8 md:py-20 2xl:py-32 container m-auto font-display">
-        <h2 class="text-xl md:text-6xl font-display font-black">
-          Numbers, from last year
-        </h2>
+  <section>
+    <div class="px-5 py-8 md:py-20 2xl:py-32 container m-auto font-display">
+      <h2 class="text-xl md:text-6xl font-display font-black">
+        Numbers, from last year
+      </h2>
 
-        <ul class="flex flex-wrap gap-12 lg:gap-40 pt-5 md:pt-20 font-display">
-          <li>
-            <span class="block text-4xl lg:text-8xl font-black text-accent"
-              >{numbers.speakers}</span
-            ><span class="lg:text-2xl block text-gray-700">Speakers</span>
-          </li>
-          <li>
-            <span class="block text-4xl lg:text-8xl font-black text-red-800"
-              >{numbers.attendees}</span
-            ><span class="lg:text-2xl block text-gray-700">Partecipants</span>
-          </li>
-          <li>
-            <span class="block text-4xl lg:text-8xl font-black text-gray-700"
-              >{numbers.sponsors}</span
-            ><span class="block lg:text-2xl text-gray-700">Sponsors</span>
-          </li>
-        </ul>
-      </div>
-    </section>
-  </div>
+      <ul class="flex flex-wrap gap-12 lg:gap-40 pt-5 md:pt-20 font-display">
+        <li>
+          <span class="block text-4xl lg:text-8xl font-black text-accent"
+            >{numbers.speakers}</span
+          ><span class="lg:text-2xl block text-gray-700">Speakers</span>
+        </li>
+        <li>
+          <span class="block text-4xl lg:text-8xl font-black text-red-800"
+            >{numbers.attendees}</span
+          ><span class="lg:text-2xl block text-gray-700">Partecipants</span>
+        </li>
+        <li>
+          <span class="block text-4xl lg:text-8xl font-black text-gray-700"
+            >{numbers.sponsors}</span
+          ><span class="block lg:text-2xl text-gray-700">Sponsors</span>
+        </li>
+      </ul>
+    </div>
+  </section>
 </Layout>
