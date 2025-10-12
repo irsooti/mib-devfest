@@ -40,7 +40,7 @@ export function Toolbar(
           onClick={() => setIsMenuOpen((prev) => !prev)}
         ></HamburgerButton>
         {isMenuOpen ? (
-          <div className="bg-primary fixed top-0 left-0 w-full min-h-screen z-[999999] py-6 px-5">
+          <div className="bg-primary fixed top-0 left-0 w-full min-h-screen z-[999999] py-3 px-5">
             <div className="flex flex-row-reverse">
               <CloseButton
                 label={t("hamburger.close")}
