@@ -12,6 +12,11 @@
   font-family: var(--font-serif) !important;
 }
 
+@utility btn {
+  @apply font-display 
+}
+
+
 @plugin "daisyui/theme" {
   name: "MIB";
   default: true;
