@@ -1,9 +1,21 @@
 ---
 import Header from "../components/shared/Header.astro";
+import Seo from "../components/shared/Seo.astro";
 import Layout from "./Layout.astro";
+
+interface Props {
+  content: {
+    title: string;
+  };
+}
+
+console.log(Astro.props);
+
+const { title } = Astro.props.content;
 ---
 
 <Layout lang={Astro.currentLocale || "en"}>
+  <Seo slot="seo" title={title} />
   <Header />
   <main class="container m-auto py-32">
     <div class="prose prose-xl px-5">

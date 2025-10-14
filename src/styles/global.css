@@ -4,6 +4,12 @@
 @theme {
   --font-display: "Poppins", sans-serif;
   --font-long: "Merriweather", serif;
+  --font-sans: var(--font-display);
+  --font-serif: var(--font-long);
+}
+
+#sessionize.sessionize-wrapper {
+  font-family: var(--font-serif) !important;
 }
 
 @plugin "daisyui/theme" {

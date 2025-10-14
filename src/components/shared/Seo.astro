@@ -1,0 +1,15 @@
+---
+interface Props {
+  title?: string;
+}
+
+const { title = "Devfest Pescara 2025" } = Astro.props;
+---
+
+<title>{title}</title><meta
+  name="description"
+  content="Join us in Pescara, IT for our conference. Featuring distinguished speakers, workshops, and lots of fun in between. See you there!"
+/><meta name="og:title" content={title} /><meta
+  name="og:description"
+  content="Join us in Pescara, IT for our conference. Featuring distinguished speakers, workshops, and lots of fun in between. See you there!"
+/>

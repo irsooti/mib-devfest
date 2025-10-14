@@ -1,12 +1,13 @@
 ---
 layout: ../layouts/Page.astro
+title: "Location"
 ---
 
-## About the location
+## About the venue
 
 ### Where to go 🚶‍♀️
 
-**Università degli studi "G.D'Annunzio"** located in: <a href="https://maps.app.goo.gl/aogyjHbjyX2Gjsup9" target="_blank">**Viale Pindaro, 42 - 65127 Pescara PE**</a>
+**Aurum** located in: <a href="https://maps.app.goo.gl/mMaQNcqyuv7cY6VTA" target="_blank">**Largo Gardone Riviera - 65126 Pescara PE**</a>
 
 ## How to get there
 
@@ -29,7 +30,7 @@ Wherever you are you can always call a taxi dialling <a href="tel:+3908535155">(
 
 **Urban bus**
 
-Check the fastest way to get from the Airport terminal to the Università degli studi "G.D'Annunzio" <a href="https://moovitapp.com/pescara_ed_abruzzo-3762/poi/Universit%C3%A0%20degli%20Studi%20%22Gabriele%20d'Annunzio%22/Pescara%20Aeroporto/en?fll=42.430244_14.188005&customerId=4908&ref=1&poiType=street&tll=42.452006_14.224785&t=1" target="_blank">here</a> (moovit)
+Check the fastest way to get from the Airport terminal to Aurum <a href="https://www.google.com/maps/dir//Aurum,+Largo+Gardone+Riviera,+65126+Pescara+PE/@42.4539024,14.1533779,12z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0x1331a6346d631a1d:0x70c4b786de6fa1e1!2m2!1d14.2357789!2d42.4539319!3e3?entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D" target="_blank">here</a>.
 
 You can buy bus tickets from the automatic machine in the arrivals terminal area.
 
@@ -41,7 +42,7 @@ There are regional trains connecting Pescara to Rome as well. Although they run 
 
 You can Book/Buy your train ticket here: <a href="https://www.trenitalia.com/en.html" target="_blank">here</a>
 
-And check the fastest way to get from the Central railway station to the Università degli studi "G.D'Annunzio" <a href="https://moovitapp.com/pescara_ed_abruzzo-3762/poi/Universit%C3%A0%20degli%20Studi%20%22Gabriele%20d'Annunzio%22/Pescara%20Centrale/en?customerId=4908&ref=1&poiType=street&tll=42.452006_14.224785&fll=42.46896_14.203832&t=1" target="_blank">here</a> (moovit)
+And check the fastest way to get from the Central railway station to Aurum <a href="https://www.google.com/maps/dir/Pescara+Centrale,+Pescara,+Province+of+Pescara/Aurum,+Largo+Gardone+Riviera,+65126+Pescara+PE/@42.461245,14.2088546,15z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x1331a67048697dcf:0x88830e391add2407!2m2!1d14.2040009!2d42.4686275!1m5!1m1!1s0x1331a6346d631a1d:0x70c4b786de6fa1e1!2m2!1d14.2357789!2d42.4539319!3e3?entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D" target="_blank">here</a>.
 
 ### By coach 🚌
 
@@ -61,6 +62,6 @@ You’ll find timetables and fares of the main coach companies reaching Pescara 
 
 ### By car 🚗
 
-Coming from Bologna/Bari: <a href="https://www.google.com/maps/dir/Casello+Pescara+Ovest-Chieti,+A14+-+Autostrada+Adriatica,+66020+Zona+Industriale+Val+Pescara+CH/Universit%C3%A0+degli+studi+%22G.d'Annunzio%22+sede+Pescara,+Viale+Pindaro,+Pescara,+PE/@42.4472504,14.2134643,15.33z/data=!4m14!4m13!1m5!1m1!1s0x1331aee889a2ae6d:0x17e789412e5f5b2a!2m2!1d14.1650968!2d42.396486!1m5!1m1!1s0x1331a74d5acdfbdf:0x4389fccd7763c874!2m2!1d14.2248392!2d42.45195!3e0?entry=ttu" target="_blank">from A14 motorway</a> take the exit Pescara Ovest-Chieti. At the roundabout, take the 2nd exit onto Pescara, turn right onto the ramp to Pescara/Porto, merge onto E80 (Asse Attrezzato). Continue on Asse Attrezzato to the exit "Pescara Porta Nuova/Università". Take Via Lago di Campotosto and Viale Gabriele D'Annunzio to Viale Pindaro.
+Coming from Bologna/Bari: <a href="https://www.google.com/maps/dir/Casello+di+Chieti+Pescara+Ovest,+Ingresso+Autostrada+Adriatica,+66100+Zona+Industriale+Val+Pescara+CH/Aurum,+Largo+Gardone+Riviera,+65126+Pescara+PE/@42.4292868,14.1573239,13z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x1331aee889a2ae6d:0x17e789412e5f5b2a!2m2!1d14.165266!2d42.3957362!1m5!1m1!1s0x1331a6346d631a1d:0x70c4b786de6fa1e1!2m2!1d14.2357789!2d42.4539319!3e0?entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D" target="_blank">from A14 motorway</a> take the exit Pescara Ovest-Chieti. At the roundabout, take the 2nd exit onto Pescara, turn right onto the ramp to Pescara/Porto, merge onto E80 (Asse Attrezzato). At the end of E80, at the roundabout, take the 3rd exit and turn right on Via Bardet/Via Francesco Ferdinando D'Avalos.
 
-Coming from Rome: from A25 motorway, take the exit Chieti-Pescara and then follow E80 (Asse Attrezzato) freeway, direction Pescara. Continue on Asse Attrezzato to the exit "Pescara Porta Nuova/Università". Take Via Lago di Campotosto and Viale Gabriele D'Annunzio to Viale Pindaro.
+Coming from Rome: from A25 motorway, take the exit Chieti-Pescara and then follow E80 (Asse Attrezzato) freeway, direction Pescara. Continue on Asse Attrezzato until the end. At the roundabout, take the 3rd exit and turn right on Via Bardet/Via Francesco Ferdinando D'Avalos.

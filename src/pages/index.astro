@@ -7,12 +7,14 @@ import { getRelativeLocaleUrl } from "astro:i18n";
 import { Image } from "astro:assets";
 import { numbers } from "../components/landing/numbers";
 import Header from "../components/shared/Header.astro";
+import Seo from "../components/shared/Seo.astro";
 
 // Urls
 const scheduleUrl = getRelativeLocaleUrl("en", "schedule");
 ---
 
 <Layout lang="en">
+  <Seo slot="seo" />
   <div>
     <Header />
     <div class="relative mt-10 -z-10 @container m-auto">
@@ -44,7 +46,7 @@ const scheduleUrl = getRelativeLocaleUrl("en", "schedule");
     </div>
   </section>
 
-  <section>
+  <section class="md:bg-white">
     <div class="py-8 md:py-20 2xl:py-32">
       <h2
         class="text-xl font-display font-black md:text-6xl px-5 md:pb-5 container m-auto"
@@ -52,21 +54,24 @@ const scheduleUrl = getRelativeLocaleUrl("en", "schedule");
         Reach us at <span class="text-accent">Aurum.</span>
       </h2>
       <div
-        class="flex flex-col gap-5 md:flex-row-reverse justify-end md:bg-white"
+        class="flex flex-col gap-5 md:flex-row-reverse justify-end"
       >
-        <div class="px-5 container m-auto">
-          <p class="font-long text-xs mt-5 md:text-2xl prose max-w-prose">
-            We are located in front of the Pineta D'Annunziana, a 5-minute walk
-            from the waterfront
-          </p>
-          <div>
-            <button class="btn btn-primary btn-md lg:btn-lg xl:btn-xl mt-5"
-              >FOLLOW THE DIRECTIONS</button
-            >
+        <div class="px-5 container m-auto flex flex-col-reverse xl:flex-row-reverse gap-10 pt-5 xl:pt-20">
+          <div class="">
+            <p class="font-long text-xs mt-5 md:text-2xl prose max-w-prose">
+              We are located in front of the Pineta D'Annunziana, a 5-minute
+              walk from the waterfront
+            </p>
+            <div>
+              <button class="btn btn-primary btn-md lg:btn-lg xl:btn-xl mt-5"
+                >FOLLOW THE DIRECTIONS</button
+              >
+            </div>
           </div>
-        </div>
-        <div class="opacity-90">
-          <Image src={Aurum} alt="Aurum" class="w-full h-auto" />
+
+          <div class="opacity-90">
+            <Image src={Aurum} alt="" class="rounded-4xl xl:-rotate-3 max-w-full" />
+          </div>
         </div>
       </div>
     </div>

@@ -11,7 +11,7 @@ export default defineConfig({
     locales: ["en", "it"],
     defaultLocale: "en",
   },
-
+  site: "https://devfest.gdgpescara.it/",
   vite: {
     plugins: [tailwindcss()],
   },

@@ -1,0 +1,19 @@
+---
+import Header from "../components/shared/Header.astro";
+import Seo from "../components/shared/Seo.astro";
+import Layout from "../layouts/Layout.astro";
+
+const data = await fetch(
+  "https://sessionize.com/api/v2/6dnuxqwq/view/SpeakerWall"
+);
+
+const content = await data.text();
+---
+
+<Layout lang="en">
+  <Seo slot="seo" title="Speakers" />
+  <Header />
+  <div class="bg-white mt-8 md:mt-20 2xl:mt-32 py-8 md:py-20 2xl:py-32">
+    <div set:html={content} />
+  </div>
+</Layout>

@@ -1,12 +1,13 @@
 ---
 layout: ../../layouts/Page.astro
+title: "Location"
 ---
 
-## Location
+## La sede
 
 ### Dove andare 🚶‍♀️
 
-**Università degli studi "G.D'Annunzio"** in: <a href="https://maps.app.goo.gl/aogyjHbjyX2Gjsup9" target="_blank">**Viale Pindaro, 42 - 65127 Pescara PE**</a>
+**Aurum** in: <a href="https://maps.app.goo.gl/mMaQNcqyuv7cY6VTA" target="_blank">**Largo Gardone Riviera - 65126 Pescara PE**</a>
 
 ## Come raggiungerci
 
@@ -29,7 +30,7 @@ Dovunque vi troviate potete sempre chiamare un taxi al numero <a href="tel:+3908
 
 **Autobus Urbani**
 
-Troverete il modo più veloce di muovervi dall'Aeroporto all'Università degli studi "G.D'Annunzio" <a href="https://moovitapp.com/pescara_ed_abruzzo-3762/poi/Universit%C3%A0%20degli%20Studi%20%22Gabriele%20d'Annunzio%22/Pescara%20Aeroporto/it?ref=1&customerId=4908&fll=42.430244_14.188005&tll=42.452006_14.224785&t=1" target="_blank">qui</a> (moovit)
+Troverete il modo più veloce di muovervi dall'Aeroporto all'Aurum <a href="https://www.google.com/maps/dir//Aurum,+Largo+Gardone+Riviera,+65126+Pescara+PE/@42.4539024,14.1533779,12z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0x1331a6346d631a1d:0x70c4b786de6fa1e1!2m2!1d14.2357789!2d42.4539319!3e3?entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D" target="_blank">qui</a>.
 
 Potete comprare i biglietti dalle biglietterie automatiche nell'area arrivi del terminal.
 
@@ -41,7 +42,7 @@ Ci sono anche treni regionali che collegano Pescara a Roma. Sebbene la loro rott
 
 Potete Prenotare/Comprare i vostri biglietti del treno: <a href="https://www.trenitalia.com/" target="_blank">qui</a>
 
-E trovare il modo più veloce di muovervi dalla Stazione Centrale all'Università degli studi "G.D'Annunzio" <a href="https://moovitapp.com/pescara_ed_abruzzo-3762/poi/Universit%C3%A0%20degli%20Studi%20%22Gabriele%20d'Annunzio%22/Pescara%20Centrale/it?ref=1&customerId=4908&fll=42.468683_14.204046&tll=42.452006_14.224785&t=1" target="_blank">qui</a> (moovit)
+E trovare il modo più veloce di muovervi dalla Stazione Centrale all'Aurum <a href="https://www.google.com/maps/dir/Pescara+Centrale,+Pescara,+Province+of+Pescara/Aurum,+Largo+Gardone+Riviera,+65126+Pescara+PE/@42.461245,14.2088546,15z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x1331a67048697dcf:0x88830e391add2407!2m2!1d14.2040009!2d42.4686275!1m5!1m1!1s0x1331a6346d631a1d:0x70c4b786de6fa1e1!2m2!1d14.2357789!2d42.4539319!3e3?entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D" target="_blank">qui</a>.
 
 ### Autobus 🚌
 
@@ -61,6 +62,6 @@ Troverete orari e fermate delle principali compagnie che raggiungono Pescara qui
 
 ### Auto 🚗
 
-Da Bologna/Bari: <a href="https://www.google.com/maps/dir/Casello+Pescara+Ovest-Chieti,+A14+-+Autostrada+Adriatica,+66020+Zona+Industriale+Val+Pescara+CH/Universit%C3%A0+degli+studi+%22G.d'Annunzio%22+sede+Pescara,+Viale+Pindaro,+Pescara,+PE/@42.4472504,14.2134643,15.33z/data=!4m14!4m13!1m5!1m1!1s0x1331aee889a2ae6d:0x17e789412e5f5b2a!2m2!1d14.1650968!2d42.396486!1m5!1m1!1s0x1331a74d5acdfbdf:0x4389fccd7763c874!2m2!1d14.2248392!2d42.45195!3e0?entry=ttu" target="_blank">dall'autostrada A14</a> prendete l'uscita Pescara Ovest-Chieti. Alla rotonda, prendete la seconda uscita verso Pescara, girate a destra sulla rampa verso Pescara/Porto, salendo sulla E80 (Asse Attrezzato). Continuate sull'Asse Attrezzato fino all'uscita Pescara Porta Nuova/Università. Prendete Via Lago di Campotosto e Viale Gabriele D'Annunzio in direzione di Viale Pindaro.
+Da Bologna/Bari: <a href="https://www.google.com/maps/dir/Casello+di+Chieti+Pescara+Ovest,+Ingresso+Autostrada+Adriatica,+66100+Zona+Industriale+Val+Pescara+CH/Aurum,+Largo+Gardone+Riviera,+65126+Pescara+PE/@42.4292868,14.1573239,13z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x1331aee889a2ae6d:0x17e789412e5f5b2a!2m2!1d14.165266!2d42.3957362!1m5!1m1!1s0x1331a6346d631a1d:0x70c4b786de6fa1e1!2m2!1d14.2357789!2d42.4539319!3e0?entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D" target="_blank">dall'autostrada A14</a> prendete l'uscita Pescara Ovest-Chieti. Alla rotonda, prendete la seconda uscita verso Pescara, girate a destra sulla rampa verso Pescara/Porto, salendo sulla E80 (Asse Attrezzato). Continuate fino alla fine dell'Asse Attrezzato, poi prendete la terza uscita alla rotatoria, girando a destra su Via Bardet/Via Francesco Ferdinando D'Avalos.
 
-Da Roma: dall'autostrada A25, prendete l'uscita Chieti-Pescara e seguite l'E80 (Asse Attrezzato), direzione Pescara. Continuate sull'Asse Attrezzato fino all'uscita "Pescara Porta Nuova/Università". Prendete Via Lago di Campotosto e Viale Gabriele D'Annunzio in direzione di Viale Pindaro.
+Da Roma: dall'autostrada A25, prendete l'uscita Chieti-Pescara e seguite l'E80 (Asse Attrezzato), direzione Pescara. Continuate fino alla fine dell'Asse Attrezzato, poi prendete la terza uscita alla rotatoria, girando a destra su Via Bardet/Via Francesco Ferdinando D'Avalos.

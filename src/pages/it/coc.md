@@ -1,5 +1,6 @@
 ---
 layout: ../../layouts/Page.astro
+title: "Codice di condotta"
 ---
 
 ## Generale

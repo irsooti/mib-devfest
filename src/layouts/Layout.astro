@@ -35,17 +35,13 @@ const t = useTranslations(Astro.props.lang as KnownLocales);
     <meta charset="utf-8" /><meta
       name="viewport"
       content="width=device-width, initial-scale=1"
-    /><title>Devfest Pescara 2025</title><meta
-      name="description"
-      content="Join us in Pescara, IT for our conference. Featuring distinguished speakers, workshops, and lots of fun in between. See you there!"
-    /><meta name="og:title" content="Devfest Pescara 2025" /><meta
-      name="og:description"
-      content="Join us in Pescara, IT for our conference. Featuring distinguished speakers, workshops, and lots of fun in between. See you there!"
-    /><meta
+    />
+    <slot name="seo" />
+    <meta
       name="image"
       property="og:image"
-      content="https://devfest.gdgpescara.it/images/og.jpg"
-    /><meta name="og:url" content="https://devfest.gdgpescara.it" /><meta
+      content={`${Astro.site}/og.jpg`}
+    /><meta name="og:url" content={Astro.site} /><meta
       name="og:type"
       content="website"
     /><meta name="twitter:card" content="summary_large_image" /><meta
@@ -53,7 +49,7 @@ const t = useTranslations(Astro.props.lang as KnownLocales);
       content="@gdgpescara"
     /><meta name="twitter:creator" content="@gdgpescara" /><meta
       name="twitter:image"
-      content="https://devfest.gdgpescara.it/images/og.jpg"
+      content={`${Astro.site}/og.jpg`}
     /><meta name="author" content="GDG Pescara" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
