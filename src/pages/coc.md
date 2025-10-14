@@ -1,5 +1,6 @@
 ---
 layout: ../layouts/Page.astro
+title: 'Code of conduct'
 ---
 
 ## General
