@@ -13,6 +13,10 @@ interface Props {
 const { lang } = Astro.props;
 
 const homeUrl = getRelativeLocaleUrl(lang, "/");
+const scheduleUrl = getRelativeLocaleUrl(lang, "/schedule");
+const speakersUrl = getRelativeLocaleUrl(lang, "/speakers");
+const venueUrl = getRelativeLocaleUrl(lang, "/venue");
+const cocUrl = getRelativeLocaleUrl(lang, "/coc");
 
 const t = useTranslations(lang);
 ---
@@ -20,28 +24,28 @@ const t = useTranslations(lang);
 <Toolbar lang={lang} client:load>
   <Fragment slot="mainLinks">
     <Link href={homeUrl} exact>Home</Link>
-    <Link href="/schedule">{t("schedule.title")}</Link>
+    <Link href={scheduleUrl}>{t("schedule.title")}</Link>
+    <Link href={speakersUrl}>{t("speakers.title")}</Link>
     <div class="flex">
-      <LanguageSelector href="/it/" isActive={lang === "it"}>IT</LanguageSelector
+      <LanguageSelector href="/it/" isActive={lang === "it"}
+        >IT</LanguageSelector
       >
       <div class="divider divider-horizontal"></div>
-      <LanguageSelector href="/" isActive={lang === "en"}>EN</LanguageSelector
-      >
+      <LanguageSelector href="/" isActive={lang === "en"}>EN</LanguageSelector>
     </div>
   </Fragment>
   <Fragment slot="mobileLinks">
     <Link exact href={homeUrl}>Home</Link>
-    <Link href="/schedule">{t("schedule.title")}</Link>
-    <Link href="/speakers">{t("speakers.title")}</Link>
-    <Link href="/gamification">{t("gamification.title")}</Link>
-    <Link href="/venue">{t("venue.title")}</Link>
-    <Link href="/coc">{t("coc.title")} </Link>
+    <Link href={scheduleUrl}>{t("schedule.title")}</Link>
+    <Link href={speakersUrl}>{t("speakers.title")}</Link>
+    <Link href={venueUrl}>{t("venue.title")}</Link>
+    <Link href={cocUrl}>{t("coc.title")} </Link>
     <div class="flex m-auto text-center">
-      <LanguageSelector href="/it/" isActive={lang === "it"}>IT</LanguageSelector
+      <LanguageSelector href="/it/" isActive={lang === "it"}
+        >IT</LanguageSelector
       >
       <div class="divider divider-horizontal divider-neutral"></div>
-      <LanguageSelector href="/" isActive={lang === "en"}>EN</LanguageSelector
-      >
+      <LanguageSelector href="/" isActive={lang === "en"}>EN</LanguageSelector>
     </div>
   </Fragment>
 </Toolbar>

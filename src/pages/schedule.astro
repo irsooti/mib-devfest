@@ -1,17 +1,17 @@
 ---
-import Header from "../../components/shared/Header.astro";
-import Seo from "../../components/shared/Seo.astro";
-import Layout from "../../layouts/Layout.astro";
+import Header from "../components/shared/Header.astro";
+import Seo from "../components/shared/Seo.astro";
+import Layout from "../layouts/Layout.astro";
 
 const data = await fetch(
-  "https://sessionize.com/api/v2/6dnuxqwq/view/SpeakerWall"
+  "https://sessionize.com/api/v2/6dnuxqwq/view/GridSmart"
 );
 
 const content = await data.text();
 ---
 
 <Layout lang="it">
-  <Seo slot="seo" title="Speakers" />
+  <Seo slot="seo" title="Schedule" />
   <Header />
   <main>
     <div class="bg-white mt-8 md:mt-20 2xl:mt-32 py-8 md:py-20 2xl:py-32">
@@ -19,10 +19,10 @@ const content = await data.text();
         <h2
           class="text-primary pb-8 md:pb-20 text-center text-3xl md:text-5xl font-display font-black"
         >
-          Relatori
+          Schedule
         </h2>
       </div>
-      <div set:html={content} />
+      <div class="text-center" set:html={content} />
     </div>
   </main>
 </Layout>
