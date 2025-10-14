@@ -16,7 +16,7 @@
   name: "MIB";
   default: false;
   prefersdark: true;
-  color-scheme: "light";
+  color-scheme: "dark";
   --color-base-100: oklch(100% 0 0);
   --color-base-200: oklch(98% 0 0);
   --color-base-300: oklch(95% 0 0);

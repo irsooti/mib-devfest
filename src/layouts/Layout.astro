@@ -5,7 +5,6 @@ import Linkedin from "../components/shared/linkedin.svg";
 import X from "../components/shared/x.svg";
 import Instagram from "../components/shared/instagram.svg";
 import Logo from "../components/shared/gdg-pescara.png";
-import { Toolbar } from "../components/navbar/Toolbar";
 import Navbar from "../components/navbar/Navbar.astro";
 import Image from "astro/components/Image.astro";
 import type { KnownLocales } from "../i18n";
@@ -25,7 +24,7 @@ const t = useTranslations(Astro.props.lang as KnownLocales);
 ---
 
 <!doctype html>
-<html lang={Astro.props.lang} class="bg-gray-100">
+<html lang={Astro.props.lang} class="bg-gray-100" >
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
