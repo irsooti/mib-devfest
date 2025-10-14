@@ -49,19 +49,17 @@
 
 @keyframes concentricCircles {
   0% {
-    transform: translateX(0);
+    transform: translateY(0);
   }
   25% {
-    transform: translateX(10px);
+    transform: translateY(5px);
   }
-  50% {
-    transform: translateX(0);
-  }
+
   75% {
-    transform: translateX(-10px);
+    transform: translateY(-5px);
   }
   100% {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
