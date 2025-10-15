@@ -1,0 +1,78 @@
+---
+// Toolbar.astro (Astro component)
+const { lang } = Astro.props;
+import { useTranslations } from "../../i18n/utils";
+
+const t = useTranslations(lang === "it" ? "it" : "en");
+---
+
+<div>
+  <!-- Desktop navigation -->
+  <div class="hidden lg:block lg:container lg:mx-auto">
+    <nav class="flex gap-10 py-6 justify-end items-center font-bold">
+      <slot name="mainLinks" />
+    </nav>
+  </div>
+
+  <!-- Mobile navigation -->
+  <div class="flex flex-row-reverse lg:hidden">
+    <button
+      id="hamburger-btn"
+      class="cursor-pointer focus-visible:ring-8 ring-accent group border-primary focus:ring-2 focus:ring-opacity-50 focus:border-accent focus:ring-vaporyellow-100 border-2 h-5 w-5 p-4 box-content flex flex-col justify-between rounded-full"
+    >
+      <span class="sr-only">{t("hamburger.open")}</span>
+      <span class="h-0.5 w-full group-focus:bg-accent bg-primary rounded-full"
+      ></span>
+      <span class="h-0.5 w-full group-focus:bg-accent bg-primary rounded-full"
+      ></span>
+      <span class="h-0.5 w-full group-focus:bg-accent bg-primary rounded-full"
+      ></span>
+    </button>
+    <div
+      id="mobile-menu"
+      style="display:none;"
+      class="bg-primary fixed top-0 left-0 w-full min-h-screen z-[999999] py-3 px-5"
+    >
+      <div class="flex flex-row-reverse">
+        <button
+          id="close-btn"
+          class="cursor-pointer focus-visible:ring-8 ring-accent group relative border-primary-content focus:border-primary-content focus:ring-2 focus:ring-opacity-50 focus:ring-accent border-2 h-5 w-5 p-4 box-content flex flex-nowrap flex-col justify-between rounded-full bg-vaporpink-900"
+        >
+          <span class="sr-only">{t("hamburger.close")}</span>
+          <span
+            class="absolute top-1/2 h-0.5 w-5 transform rotate-45 group-focus:bg-vaporviolet-900 bg-primary-content rounded-full"
+          ></span>
+          <span
+            class="absolute top-1/2 h-0.5 w-5 transform -rotate-45 group-focus:bg-vaporviolet-900 bg-primary-content rounded-full"
+          ></span>
+        </button>
+      </div>
+      <nav
+        tabindex={-2}
+        class="flex flex-col gap-6 pt-6 text-center text-2xl font-black text-primary-content"
+      >
+        <slot name="mobileLinks" />
+      </nav>
+    </div>
+  </div>
+</div>
+
+<!-- SCRIPT for menu open/close and body overflow lock/unlock -->
+<script>
+  const hamburgerBtn = document.getElementById("hamburger-btn");
+  const closeBtn = document.getElementById("close-btn")!;
+  const mobileMenu = document.getElementById("mobile-menu")!;
+  let isMenuOpen = false;
+
+  hamburgerBtn?.addEventListener("click", () => {
+    isMenuOpen = true;
+    mobileMenu.style.display = "block";
+    document.body.style.overflow = "hidden";
+  });
+
+  closeBtn?.addEventListener("click", () => {
+    isMenuOpen = false;
+    mobileMenu.style.display = "none";
+    document.body.style.overflow = "auto";
+  });
+</script>
