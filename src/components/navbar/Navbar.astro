@@ -21,7 +21,7 @@ const cocUrl = getRelativeLocaleUrl(lang, "/coc");
 const t = useTranslations(lang);
 ---
 
-<Toolbar lang={lang} client:load>
+<Toolbar lang={lang}>
   <Fragment slot="mainLinks">
     <Link href={homeUrl} exact>Home</Link>
     <Link href={scheduleUrl}>{t("schedule.title")}</Link>
