@@ -15,8 +15,8 @@ const { title } = Astro.props.content;
 <Layout lang={Astro.currentLocale || "en"}>
   <Seo slot="seo" title={title} />
   <Header />
-  <main class="container m-auto py-32">
-    <div class="prose prose-xl px-5">
+  <main class="container m-auto py-8 md:py-20 2xl:py-32">
+    <div class="prose-sm md:prose-xl px-5">
       <slot />
     </div>
   </main>
