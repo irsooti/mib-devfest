@@ -60,14 +60,20 @@ const scheduleUrl = getRelativeLocaleUrl("en", "schedule");
           >
             Raggiungici, siamo all'<span class="text-accent">Aurum.</span>
           </h2>
-          <div class="flex flex-col gap-5 md:flex-row-reverse justify-end">
+          <div class="flex flex-col gap-5 md:flex-row-reverse">
             <div
-              class="px-5 container m-auto flex flex-col xl:flex-row-reverse gap-5 md:gap-10 pt-5 xl:pt-20"
+              class="px-5 container m-auto justify-end flex flex-col xl:flex-row-reverse gap-5 md:gap-10 pt-5 xl:pt-20"
             >
               <div class="">
                 <p class="font-long text-xs md:text-2xl prose max-w-prose">
-                  Siamo di fronte alla Pineta D'Annunziana, ad appena 5 minuti a
-                  piedi dalla riviera
+                  Siamo di fronte alla Pineta D'Annunziana,<br /> ad appena 5 minuti
+                  a piedi dalla riviera, una zona ben servita e facilmente raggiungibile
+                  <a
+                    target="_blank"
+                    title="Vedi come arrivare"
+                    href={getRelativeLocaleUrl("it", "/venue")}
+                    >con diversi mezzi di trasporto</a
+                  >
                 </p>
                 <div>
                   <a

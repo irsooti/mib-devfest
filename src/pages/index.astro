@@ -55,16 +55,21 @@ const scheduleUrl = getRelativeLocaleUrl("en", "schedule");
       >
         Reach us at <span class="text-accent">Aurum.</span>
       </h2>
-      <div class="flex flex-col gap-5 md:flex-row-reverse justify-end">
+      <div class="flex flex-col gap-5 md:flex-row-reverse">
         <div
-          class="px-5 container m-auto flex flex-col xl:flex-row-reverse gap-5 md:gap-10 xl:pt-20"
+          class="px-5 container m-auto flex flex-col justify-end xl:flex-row-reverse gap-5 md:gap-10 xl:pt-20"
         >
           <div class="">
             <p class="font-long text-xs mt-5 md:text-2xl prose max-w-prose">
-              We are located in front of the Pineta D'Annunziana, a 5-minute
-              walk from the waterfront
+              We are located in front of the Pineta D'Annunziana,<br /> a 5-minute
+              walk from the waterfront <a
+                target="_blank"
+                title="How to get there"
+                href={getRelativeLocaleUrl("en", "/venue")}
+                >reachable by various means of transport</a
+              >
             </p>
-            <div>
+            <div class="flex gap-2 flex-wrap">
               <a
                 href={venueLink}
                 target="_blank"
