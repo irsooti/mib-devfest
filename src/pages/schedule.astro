@@ -2,12 +2,6 @@
 import Header from "../components/shared/Header.astro";
 import Seo from "../components/shared/Seo.astro";
 import Layout from "../layouts/Layout.astro";
-
-const data = await fetch(
-  "https://sessionize.com/api/v2/6dnuxqwq/view/GridSmart"
-);
-
-const content = await data.text();
 ---
 
 <Layout lang="en">
@@ -26,7 +20,13 @@ const content = await data.text();
         </div>
       </div>
       <div class="container mx-auto px-5">
-        <div class="text-center" set:html={content} />
+        <div class="text-center">
+          <script
+            is:inline
+            type="text/javascript"
+            src="https://sessionize.com/api/v2/6dnuxqwq/view/GridSmart"
+          ></script>
+        </div>
       </div>
     </div>
   </main>
