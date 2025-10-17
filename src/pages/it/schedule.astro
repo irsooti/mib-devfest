@@ -16,13 +16,18 @@ const content = await data.text();
   <main>
     <div class="bg-white mt-8 md:mt-20 2xl:mt-32 py-8 md:py-20 2xl:py-32">
       <div class="container m-auto">
-        <h2
-          class="text-primary pb-8 md:pb-20 text-center text-3xl md:text-5xl font-display font-black"
+        <div
+          class="text-primary pb-8 md:pb-20 text-center font-display font-black"
         >
-          Programma
-        </h2>
+          <h2 class="text-3xl md:text-5xl">Programma</h2>
+          <p class="text-center text-xl md:text-3xl font-normal">
+            (Può variare durante l'evento)
+          </p>
+        </div>
       </div>
-      <div class="text-center" set:html={content} />
+      <div class="container mx-auto px-5">
+        <div class="text-center" set:html={content} />
+      </div>
     </div>
   </main>
 </Layout>
