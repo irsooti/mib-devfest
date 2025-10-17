@@ -2,12 +2,6 @@
 import Header from "../../components/shared/Header.astro";
 import Seo from "../../components/shared/Seo.astro";
 import Layout from "../../layouts/Layout.astro";
-
-const data = await fetch(
-  "https://sessionize.com/api/v2/6dnuxqwq/view/SpeakerWall"
-);
-
-const content = await data.text();
 ---
 
 <Layout lang="it">
@@ -22,7 +16,12 @@ const content = await data.text();
           Relatori
         </h2>
       </div>
-      <div set:html={content} />
+      <div>
+        <script
+          is:inline
+          type="text/javascript"
+          src="https://sessionize.com/api/v2/6dnuxqwq/view/Speakers"></script>
+      </div>
     </div>
   </main>
 </Layout>
