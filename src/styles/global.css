@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:wght@300;400;500;700;900&display=swap');
+
 @import "tailwindcss";
 @plugin "daisyui";
 
 @theme {
   --font-display: "Poppins", sans-serif;
   --font-long: "Merriweather", serif;
+  --font-long--font-optical-sizing: auto;
+  --font-long--font-weight: 300;
+  --font-long--font-variation-settings: "wdth" 100;
+
   --font-sans: var(--font-display);
   --font-serif: var(--font-long);
 }
@@ -13,9 +19,8 @@
 }
 
 @utility btn {
-  @apply font-display 
+  @apply font-display;
 }
-
 
 @plugin "daisyui/theme" {
   name: "MIB";
